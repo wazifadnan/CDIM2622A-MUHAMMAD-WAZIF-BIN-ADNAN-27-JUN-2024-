@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Wazif E-Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-image: url(pic/floral.jpg);
+            background-size: cover;
+            color: #333; /* Text color */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #555;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            background-color: #84be87;
+            justify-content: space-around;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            background-color: #6e9b76; /* Darker green on hover */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            margin: 20px;
+            margin-top: 100px; /* Adjust for navbar */
+            background-color: rgba(255, 255, 255, 0.9); /* More transparent */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .section h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 1px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .footer img {
+            height: 125px;
+            float: left;
+            padding: 2%;
+        }
+
+        /* Media Query */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .section {
+                margin: 80px 10px;
+            }
+        }
+
+        /* Center Image */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .header img {
+            max-width: 100px; /* Adjusted logo size */
+        }
+
+        /* Center Logo */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Adjust as needed for spacing */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.1); /* Scale up the logo on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+</header>
+
+<main class="container">
+    <section id="home" class="section">
+        <div class="logo-container">
+            <a href="student.html">
+                <img id="home-logo" src="studentpic/waziflogo.png" alt="Website Logo" width="100" height="auto">
+            </a>
+        </div>
+        <h1><b>WELCOME</b></h1>
+        <div class="section-content">
+            <div class="card">
+                <p><b>Hi, I'm Muhammad Wazif Bin Adnan.</b></p>
+                <p>I'm a degree student at UiTM Puncak Perdana, studying Information Systems.</p>
+                <p>I'm passionate about technology and eager to contribute to your organization.</p>
+                <p>Explore my profile, experience, education, skills, portfolio and feel free to contact me!</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="pic/dek.jpg" width="350" height="450" alt="Me">
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <h5>Copyright ©️ 2024 wazifadnan</h5>
+</footer>
+
+<script>
+    window.onload = function() {
+        const homeLogo = document.getElementById('home-logo');
+        console.log('Home Page Logo Size:', homeLogo.naturalWidth, 'x', homeLogo.naturalHeight);
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Wazif E-Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-image: url(pic/floral.jpg);
+            background-size: cover;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            background-color: #84be87;
+            justify-content: space-around;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            margin-top: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: #555;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #84be87;
+            border-radius: 4px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        li:hover {
+            background-color: #f1f1f1;
+            border-color: #84be87;
+        }
+        li::before {
+            content: '•';
+            color: #84be87;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .project-images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .project-images img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .single-project-image img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 1px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .footer img {
+            height: 100px;
+            float: left;
+            padding: 2%;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .section {
+                margin: 20px 10px;
+            }
+            .project-images img, .single-project-image img {
+                max-width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+
+    <div id="portfolio" class="section">
+        <h1>Portfolio</h1>
+        <ul>
+            <li>
+                <div class="project-images">
+                    <img src="portpic/database.png" alt="Project 1 Image 1">
+                    <img src="portpic/code.png" alt="Project 1 Image 2">
+                    <img src="portpic/output.png" alt="Project 1 Image 3">
+                </div>
+                <h3>Project 1</h3>
+                <p>Making a cashier system for my intern's company</p>
+                <p>Tools: Visual Basic (VB)</p>
+            </li>
+            <li>
+                <div class="project-images">
+                    <img src="portpic/pd1.png" alt="Project 2 Image 1">
+                    <img src="portpic/pd2.png" alt="Project 2 Image 2">
+                </div>
+                <h3>Project 2</h3>
+                <p>Create mockup design packaging box for my group project</p>
+                <p>Tools: Adobe Photoshop</p>
+            </li>
+            <li>
+                <div class="single-project-image">
+                    <img src="portpic/an.png" alt="Project 3 Image">
+                </div>
+                <h3>Project 3</h3>
+                <p>Making animation of bird flying</p>
+                <p>Tools: Adobe Animate</p>
+            </li>
+            <li>
+                <div class="single-project-image">
+                    <img src="portpic/scratch.png" alt="Project 4 Image">
+                </div>
+                <h3>Project 4</h3>
+                <p>Create game (Ping Pong)</p>
+                <p>Tools: Scratch</p>
+            </li>
+            <li>
+                <div class="project-images">
+                    <img src="portpic/vfx.png" alt="Project 5 Image 1">
+                    <img src="portpic/adobe.png" alt="Project 5 Image 2">
+                    <img src="portpic/audacity.png" alt="Project 5 Image 3">
+                </div>
+                <h3>Activities</h3>
+                <p>List of certificate</p>
+                <p>1. Visual Effects workshop</p>
+                <p>2. Adobe XD workshop</p>
+                <p>3. Audacity Audio Editing workshop</p>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h5>Copyright © 2024 wazifadnan</h5>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Wazif E-Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            display: flex;
+            background-color: #84be87;
+            justify-content: space-around;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            margin-top: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: #555;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            padding: 10px;
+            position: relative;
+        }
+        .skill {
+            margin-bottom: 10px;
+        }
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, #84be87, #5a9c6e);
+            transition: width 0.5s;
+        }
+        .skill-level {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8em;
+            color: #555;
+        }
+        .footer {
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 1px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .footer img {
+            height: 100px;
+            float: left;
+            padding: 2%;
+        }
+
+        /* Language Skills */
+        .language-skills {
+            margin-top: 50px;
+        }
+        .language-skills .skill-title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .language-skills .languages-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style-type: none;
+        }
+        .language-skills .language {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .language-skills .language:hover {
+            transform: translateY(-5px);
+        }
+        .language-skills .language-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .language-skills .language-level {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Soft Skills */
+        .soft-skills .skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.soft-skills .skill-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.soft-skill {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 20px;
+    background-color: #84be87;
+    transition: width 0.5s;
+}
+
+.advanced {
+    width: 90%;
+}
+
+.expert {
+    width: 100%;
+}
+
+.intermediate {
+    width: 70%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+
+    <div id="skills" class="section">
+        <h1>Skills</h1>
+        <p>A list of my professional, language, and soft skills.</p>
+        <ul>
+            <li class="skill">
+                <div class="skill-name">C++ Language</div>
+                <div class="bar">
+                    <div class="progress" style="width: 80%;"></div>
+                    <div class="skill-level">Advanced</div>
+                </div>
+            </li>
+            <li class="skill">
+                <div class="skill-name">Video and Audio editing</div>
+                <div class="bar">
+                    <div class="progress" style="width: 70%;"></div>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+            </li>
+            <li class="skill">
+                <div class="skill-name">Hypertext Markup Language (HTML)</div>
+                <div class="bar">
+                    <div class="progress" style="width: 90%;"></div>
+                    <div class="skill-level">Expert</div>
+                </div>
+                </li>
+                <li class="skill">
+                    <div class="skill-name">Database Fundamentals</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 60%;"></div>
+                        <div class="skill-level">Intermediate</div>
+                    </div>
+                </li>
+                <li class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 75%;"></div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </li>
+                <li class="skill">
+                    <div class="skill-name">C Language</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%;"></div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </li>
+                </ul>
+                </div>
+                
+                <!-- Language Skills -->
+                <div class="section language-skills">
+                    <h2 class="skill-title">Language Skills</h2>
+                    <ul class="languages-list">
+                        <li class="language">
+                            <div class="language-name">English</div>
+                            <div class="language-level">Fluent</div>
+                        </li>
+                        <li class="language">
+                            <div class="language-name">Arabic</div>
+                            <div class="language-level">Intermediate</div>
+                        </li>
+                        <li class="language">
+                            <div class="language-name">Mandarin</div>
+                            <div class="language-level">Beginner</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Soft Skills -->
+<!-- Soft Skills -->
+<div class="section soft-skills">
+    <h2 class="skill-title">Soft Skills</h2>
+    <div class="skills-list">
+        <div class="soft-skill">
+            <div class="skill-name">Communication</div>
+            <div class="progress-bar">
+                <div class="progress-fill advanced"></div>
+            </div>
+        </div>
+        <div class="soft-skill">
+            <div class="skill-name">Teamwork</div>
+            <div class="progress-bar">
+                <div class="progress-fill expert"></div>
+            </div>
+        </div>
+        <div class="soft-skill">
+            <div class="skill-name">Problem Solving</div>
+            <div class="progress-bar">
+                <div class="progress-fill intermediate"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+                <footer>
+                    <div class="footer">
+                        <h5>Copyright © 2024 wazifadnan</h5>
+                    </div>
+                </footer>
+                
+                </body>
+                </html>

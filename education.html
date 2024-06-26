@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Wazif E-Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-image: url(pic/floral.jpg);
+            background-size: cover;
+            color: #333; /* Text color */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #555;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            background-color: #84be87;
+            justify-content: space-around;
+            padding: 1em;
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #6e9b76; /* Darker green on hover */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            margin: 20px;
+            margin-top: 80px; /* Add top padding to avoid overlap with navbar */
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 8px; /* Matched border-radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Matched shadow */
+        }
+        #home, #profile, #experience, #education, #skills, #contact {
+            min-height: 100vh;
+            padding-top: 80px; 
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        /* Footer Styles */
+        .footer {
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 1px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .footer img {
+            height: 100px; /* Adjust logo height */
+            float: left;
+            padding: 2%;
+        }
+
+        /* Media Query */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+        } 
+        p.inset {border-style: inset;}
+        
+        .image-container {
+            text-align: center; 
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .groove-container {
+            border-style: groove; 
+            padding: 10px; 
+            margin: 20px auto; 
+            max-width: 800px; 
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 10px auto; /* Center the logo and add bottom margin */
+            height: 50px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
+
+    <div id="education" class="section">
+        <h1>Education</h1>
+
+        <div class="center-content">
+            <div class="groove-container">
+                <h2>1. Sekolah Sri Seremban</h2>
+                <img src="edupic/sri.jpeg" alt="School Logo" class="logo">
+                <p>Secondary School</p>
+                <p> &#127891 Graduated in 2019 &#127891 </p>
+                <p>6A 2B for PT3</p>
+                <P>1A 6B 2C for SPM</P>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gDHtuG7K0F8?si=AisykFZn3sk_Cybl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="groove-container">
+                <h2>2. Universiti Teknologi Malaysia Kuala Lumpur (UTM)</h2>
+                <img src="edupic/utm.png" alt="UTM Logo" class="logo">
+                <p>Diploma in Computer Science</p>
+                <p> &#127891 Graduated in 2023 &#127891</p>
+                <P>CGPA 3.6</P>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w6mXMFoBZak?si=wCP1Q9t70L2N-Vax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="groove-container">
+                <h2>3. Universiti Teknologi MARA (UiTM)</h2>
+                <img src="edupic/uitm.png" alt="UiTM Logo" class="logo">
+                <p>Degree in Information System Management</p>
+                <p> &#9997 Currently studying 2023 - now &#9997</p>
+                <P>Current GPA 3.0</P>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wIqrceknPEk?si=GSDedM6iHzX6PxT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h5>Copyright © 2024 wazifadnan</h5>
+        </div>
+    </footer>
+
+</body>
+</html>

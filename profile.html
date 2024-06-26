@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Wazif E-Resume</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 100px;
+            scroll-behavior: smooth;
+            background-image: url(pic/floral.jpg);
+            background-size: cover;
+            color: #333; /* Text color */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #555; /* Color for headings */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            background-color: #84be87;
+            justify-content: space-around;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #6e9b76; /* Darker green on hover */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            margin: 20px;
+            margin-top: 2px; /* Add top padding to avoid overlap with navbar */
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 8px; /* Matched border-radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Matched shadow */
+            position: relative;
+        }
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 15px; /* Add some space between paragraphs */
+        }
+
+        /* Profile Content Styles */
+        .profile-content {
+            display: flex;
+            align-items: flex-start; /* Adjusted alignment */
+            justify-content: center; /* Center horizontally */
+            text-align: left;
+            margin-bottom: 20px; /* Add some space between profile content and video */
+        }
+        .profile-content img {
+            border-radius: 50%;
+            margin-right: 30px; /* Adjusted margin */
+            max-width: 200px; /* Adjust image size */
+        }
+        .profile-content .text {
+            max-width: 50%; /* Adjusted width */
+        }
+
+        /* Video Styles */
+        .video-container {
+            display: flex;
+            justify-content: center; /* Center the video */
+            margin-top: 20px; /* Add some space between profile content and video */
+        }
+        .video {
+            max-width: 100%;
+        }
+
+        /* Table Styles */
+        .table-container {
+            display: flex;
+            margin-top: 20px; /* Add some space above the tables */
+        }
+        table {
+            width: 80%;
+            margin: 20px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer Styles */
+        .footer {
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 1px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .footer img {
+            height: 125px;
+            float: left;
+            padding: 2%;
+        }
+
+        /* WhatsApp Link Styles */
+        .whatsapp-link {
+            color: #25D366; /* WhatsApp green */
+            text-decoration: none;
+        }
+        .whatsapp-link span {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        /* Media Query */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .section {
+                flex-direction: column; /* Adjusted for smaller screens */
+                align-items: flex-start; /* Adjusted for smaller screens */
+            }
+            .profile-content {
+                flex-direction: column;
+                align-items: center; /* Center vertically */
+                text-align: center;
+            }
+            .profile-content img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .profile-content .text {
+                max-width: 100%; /* Adjusted for smaller screens */
+            }
+            .video-container {
+                justify-content: center; /* Ensure video stays centered on smaller screens */
+            }
+            .table-container {
+                flex-direction: column; /* Stack tables vertically on smaller screens */
+                align-items: center;
+            }
+            table {
+                width: 100%; /* Full width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+    </header>
+
+    <div class="section">
+        <h1>Profile</h1>
+        <div class="profile-content">
+            <img src="pic/me2.jpg" alt="Your Photo">
+            <div class="text">
+                <p><b>Aspiring Software Developer</b></p>
+                <p>I'm Muhammad Wazif Bin Adnan, passionate about crafting innovative solutions in software development. My journey into technology is characterized by dedication to mastering programming languages and frameworks.</p>
+                <p>I thrive in dynamic environments where collaboration and innovation converge to drive progress. Eager to embark on a journey of innovation and discovery, I am driven by the prospect of contributing my expertise to a forward-thinking company poised to shape the future of technology.</p>
+                <p>My skills include HTML, CSS, JavaScript, and various web development frameworks. I am always eager to learn new technologies and improve my skills.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <!-- Personal Biodata -->
+        <h2 style="text-align: center;">Personal Biodata</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Muhammad Wazif Bin Adnan</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>Birth Date</th>
+                    <td>3rd September 2002</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>No.17 , Jalan TTJ 3/8 , Taman Tuanku Jaafar , 71450 , Seremban , Negeri Sembilan , Malaysia</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section">
+        <!-- Contact Information -->
+        <h2 style="text-align: center;">Contact Information</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>wazifjunichi@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>0173941967</td>
+                </tr>
+                <tr>
+                    <th>WhatsApp</th>
+                    <td>
+                        <a href="https://wa.me/+60173941967?text=Hello,%20I%20found%20your%20contact%20on%20your%20website" class="whatsapp-link" target="_blank">
+                            <span>&#x1F4F1;</span> 0173941967
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section">
+        <h2 style="text-align: center;">E-resume Video</h2>
+        <div class="video-container">
+            <video width="340" height="360" controls>
+                <source src="vid/vidresume.mov" type="video/mp4">
+                
+            </video>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h5>&copy; 2024 wazifadnan</h5>
+    </footer>
+
+</body>
+</html>
